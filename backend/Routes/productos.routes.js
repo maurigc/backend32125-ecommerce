@@ -9,21 +9,17 @@ const router = Router();
 // Ruta para traer todos los productos.
 router.get('/productos', checkAuthenticated, getProducto)
 
-
 // ______________________________________________________________________________________________________
 // Ruta para traer un producto por su ID.
 router.get('/productos/:id', checkAuthenticated, getProductoById)
-
 
 // ______________________________________________________________________________________________________
 // Ruta para guardar un producto.
 router.post('/productos', checkAuthenticated, saveProducto)
 
-
 // ______________________________________________________________________________________________________
 // Ruta para actualizar un producto por su ID.
 router.put('/productos/:id', checkAuthenticated, updateProducto)
-
 
 // ______________________________________________________________________________________________________
 // Ruta para eliminar un producto por su ID.

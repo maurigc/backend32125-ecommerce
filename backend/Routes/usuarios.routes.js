@@ -11,11 +11,9 @@ router.post('/login', passport.authenticate('login', {
     failureRedirect: '/api/auth/login'
 }), postLogin)
 
-
 // ______________________________________________________________________________________________________
 // Ruta para cerrar la session.
 router.get('/logout', getLogout)
-
 
 // ______________________________________________________________________________________________________
 // Ruta para registrarse.
