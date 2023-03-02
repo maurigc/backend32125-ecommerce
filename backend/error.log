@@ -1,0 +1,101 @@
+[2023-02-24T21:41:36.002] [ERROR] fileWarn - ReferenceError: usuariosDao is not defined
+    at Strategy._verify (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Middlewares/passport.js:40:26)
+    at Strategy.authenticate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\index.js:346:12)
+[2023-02-27T15:11:04.227] [ERROR] fileError - TypeError: item.save is not a function
+    at CarritoMongoDb.deleteById (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Containers/container.mongodb.js:65:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Routes/carritos.routes.js:51:9
+[2023-02-27T15:51:30.709] [ERROR] fileWarn - TypeError: Cannot read properties of undefined (reading 'isDeleted')
+    at file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Routes/carritos.routes.js:32:25
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-01T15:40:28.760] [ERROR] fileError - Error: productos validation failed: nombre: Path `nombre` is required., urlImagen: Path `urlImagen` is required., precio: Path `precio` is required.
+    at ValidationError.inspect (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:780:19)
+    at inspect (node:internal/util/inspect:345:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2165:40)
+    at Object.format (node:internal/util/inspect:2019:10)
+    at basicLayout (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    urlImagen: ValidatorError: Path `urlImagen` is required.
+        at validate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'urlImagen',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'productos validation failed'
+}
+[2023-03-01T21:55:49.665] [ERROR] fileWarn - ReferenceError: usuariosDao is not defined
+    at Strategy.loginPassport [as _verify] (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Controller/usuarios.controller.js:42:26)
+    at Strategy.authenticate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\express\lib\router\index.js:346:12)
+[2023-03-01T21:56:30.847] [ERROR] fileWarn - ReferenceError: comparar is not defined
+    at Strategy.loginPassport [as _verify] (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Controller/usuarios.controller.js:48:37)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-01T22:28:16.358] [ERROR] fileWarn - ReferenceError: transport is not defined
+    at Strategy.signupPassport [as _verify] (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Controller/usuarios.controller.js:108:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-01T22:53:43.543] [ERROR] fileWarn - ReferenceError: actualizarProducto is not defined
+    at updateProducto (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Controller/productos.controller.js:69:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-02T14:18:17.588] [ERROR] fileWarn - TypeError: Cannot read properties of undefined (reading 'timestamp')
+    at new CarritosDto (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/DTOs/carritos.dto.js:3:34)
+    at RepositorioCarritos.getById (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Repository/carritos.repository.js:15:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async obtenerCarritoPorId (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Service/carritos.service.js:16:21)
+    at async saveProductInCart (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Controller/carritos.controller.js:71:26)
+[2023-03-02T14:19:38.101] [ERROR] fileWarn - TypeError: Cannot read properties of undefined (reading 'timestamp')
+    at new CarritosDto (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/DTOs/carritos.dto.js:3:34)
+    at RepositorioCarritos.getById (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Repository/carritos.repository.js:15:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async obtenerCarritoPorId (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Service/carritos.service.js:16:21)
+    at async saveProductInCart (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Controller/carritos.controller.js:71:26)
