@@ -7,9 +7,10 @@ import { transport } from "../Scripts/nodemailer.js";
 // ______________________________________________________________________________________________________
 // Controlador para iniciar sesión.
 const postLogin = (req, res) => {
+    
     req.session.user = req.user;
 
-    res.status(200).json({ msj: 'Inicio de sesión con éxito' })
+    res.status(200).json({ msj: 'Inicio de sesión con éxito'})
 }
 
 

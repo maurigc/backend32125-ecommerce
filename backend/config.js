@@ -34,6 +34,9 @@ const config = {
         },
         resave: true,
         saveUninitialized: true
+    },
+    cors: {
+        origin: 'http://localhost:3000'  
     }
 }
 

@@ -99,3 +99,98 @@
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async obtenerCarritoPorId (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Service/carritos.service.js:16:21)
     at async saveProductInCart (file:///C:/Users/mauri/Desktop/c32125_PFbackend/backend/Controller/carritos.controller.js:71:26)
+[2023-03-04T15:08:04.363] [ERROR] fileError - Error: productos validation failed: urlImagen: Path `urlImagen` is required., precio: Path `precio` is required.
+    at ValidationError.inspect (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:780:19)
+    at inspect (node:internal/util/inspect:345:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2165:40)
+    at Object.format (node:internal/util/inspect:2019:10)
+    at basicLayout (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    urlImagen: ValidatorError: Path `urlImagen` is required.
+        at validate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'urlImagen',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'productos validation failed'
+}
+[2023-03-04T15:09:27.175] [ERROR] fileError - Error: productos validation failed: urlImagen: Path `urlImagen` is required., precio: Path `precio` is required.
+    at ValidationError.inspect (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:780:19)
+    at inspect (node:internal/util/inspect:345:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2165:40)
+    at Object.format (node:internal/util/inspect:2019:10)
+    at basicLayout (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    urlImagen: ValidatorError: Path `urlImagen` is required.
+        at validate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'urlImagen',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'productos validation failed'
+}
+[2023-03-04T15:47:22.998] [ERROR] fileError - MongoServerError: E11000 duplicate key error collection: Ecommerce.productos index: codigo_1 dup key: { codigo: "003" }
+    at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongodb\lib\cmap\connection.js:242:9)
+    at MessageStream.<anonymous> (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:520:28)
+    at processIncomingData (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (C:\Users\mauri\Desktop\c32125_PFbackend\backend\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { codigo: 1 },
+  keyValue: { codigo: '003' },
+  [Symbol(errorLabels)]: Set(0) {}
+}

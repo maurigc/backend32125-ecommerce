@@ -8,7 +8,7 @@ import { router as carritosRoutes } from './Routes/carritos.routes.js';
 import { config } from './config.js';
 import passport from 'passport';
 import compression from 'compression';
-
+import cors from 'cors';
 
 const app = express();
 
@@ -21,6 +21,7 @@ app.use(session(config.session));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(compression());
+app.use(cors(config.cors));
 
 // _________________________________________________ ROUTES _____________________________________________________
 
