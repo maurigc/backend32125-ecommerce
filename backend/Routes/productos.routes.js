@@ -11,7 +11,7 @@ router.get('/productos', checkAuthenticated, getProducto)
 
 // ______________________________________________________________________________________________________
 // Ruta para traer un producto por su ID.
-router.get('/productos/:id', checkAuthenticated, getProductoById)
+router.get('/productos/:idProducto', checkAuthenticated, getProductoById)
 
 // ______________________________________________________________________________________________________
 // Ruta para guardar un producto.
@@ -19,11 +19,11 @@ router.post('/productos', checkAuthenticated, saveProducto)
 
 // ______________________________________________________________________________________________________
 // Ruta para actualizar un producto por su ID.
-router.put('/productos/:id', checkAuthenticated, updateProducto)
+router.put('/productos/:idProducto', checkAuthenticated, updateProducto)
 
 // ______________________________________________________________________________________________________
 // Ruta para eliminar un producto por su ID.
-router.delete('/productos/:id', checkAuthenticated, deleteProducto)
+router.delete('/productos/:idProducto', checkAuthenticated, deleteProducto)
 
 
 

@@ -23,9 +23,9 @@ const getProducto = async(req, res) => {
 // Controlador para obtener un producto por su ID.
 const getProductoById = async(req, res) => {
     try {
-        const { id } = req.params;
+        const { idProducto } = req.params;
     
-        const producto = await obtenerProductoPorId(id);
+        const producto = await obtenerProductoPorId(idProducto);
 
         if(!producto || producto.isDeleted === true){
             res.status(400).json({ error: 'El producto no existe.'});
@@ -60,13 +60,13 @@ const saveProducto = async(req, res) => {
 // Controlador para actualizar un producto.
 const updateProducto = async (req, res) => {
     try {
-        const { id } = req.params;
+        const { idProducto } = req.params;
         const nuevoProducto = req.body;
     
-        const producto = await obtenerProductoPorId(id);
+        const producto = await obtenerProductoPorId(idProducto);
 
         if(producto){
-            await actualizarProducto(id, nuevoProducto)
+            await actualizarProducto(idProducto, nuevoProducto)
 
             res.status(200).json({ msj: 'Producto actualizado con éxito.'})
         }else{
@@ -84,9 +84,9 @@ const updateProducto = async (req, res) => {
 // Controlador para eliminar un producto.
 const deleteProducto = async(req, res) => {
     try {
-        const { id } = req.params;
+        const { idProducto } = req.params;
 
-        await eliminarProducto(id);
+        await eliminarProducto(idProducto);
 
         res.status(200).json('Productos eliminado con éxito.');
 
