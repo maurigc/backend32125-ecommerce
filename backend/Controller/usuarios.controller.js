@@ -2,15 +2,17 @@ import { logWarn } from "../Scripts/loggers.js";
 import { encriptar, comparar } from "../Scripts/encryptingData.js";
 import { obtenerUsuarios, guardarUsuario } from '../Service/usuarios.service.js';
 import { transport } from "../Scripts/nodemailer.js";
+import { getToken } from "../Scripts/getToken.js";
 
 
 // ______________________________________________________________________________________________________
 // Controlador para iniciar sesión.
 const postLogin = (req, res) => {
     
-    req.session.user = req.user;
+    const token = getToken(req.user)
+   
 
-    res.status(200).json({ msj: 'Inicio de sesión con éxito'})
+    res.status(200).json({ msj: 'Inicio de sesión con éxito', token })
 }
 
 
@@ -23,8 +25,10 @@ const getLogout = async(req, res) => {
                 res.status(404).json({ error: 'No se pudo cerrar sesión.'})
             }
         })
+
+        
     
-        res.status(200).json({ msj: 'Sesión cerrada con éxito.'})
+        res.status(200).json({ msj: 'Sesión cerrada con éxito.', isLogged: false})
         
     } catch (error) {
         logWarn.error(error);

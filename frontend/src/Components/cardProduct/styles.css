@@ -1,0 +1,8 @@
+.container-card-product{
+    background-color: aqua;
+    height: 400px;
+    width: 250px;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
